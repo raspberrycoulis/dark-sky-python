@@ -2,7 +2,7 @@
 
 Python wrapper for the Dark Sky Weather API. This should provide a lightweight library which is feature-complete with the API. Forked from [https://github.com/ratorx/dark-sky-python](https://github.com/ratorx/dark-sky-python), which has since been archived and was broken.
 
-[Powered by Dark Sky](https://darksky.net/poweredby/)
+![Powered by Dark Sky](https://darksky.net/dev/img/attribution/poweredby-oneline.png)
 
 ## Simple Usage
 ```python
