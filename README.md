@@ -1,18 +1,18 @@
 # Dark Sky Python
 
-Python 3 wrapper for the Dark Sky Weather API. This should provide a lightweight library which is feature-complete with the API.
+Python wrapper for the Dark Sky Weather API. This should provide a lightweight library which is feature-complete with the API. Forked from [https://github.com/ratorx/dark-sky-python](https://github.com/ratorx/dark-sky-python), which has since been archived and was broken.
 
 [Powered by Dark Sky](https://darksky.net/poweredby/)
 
 ## Simple Usage
 ```python
-import forecast
+import darksky
 
 API_KEY = "API KEY"
 LAT = <LATITUDE>
 LON = <LONGITUDE>
 
-f = forecast.Forecast(API_KEY, LAT, LON) # Generates forecast object
+f = darksky.Forecast(API_KEY, LAT, LON) # Generates forecast object
 ```
 
 From here, you can access all the data provided in the response.
