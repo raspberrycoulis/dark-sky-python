@@ -4,15 +4,25 @@ Python wrapper for the Dark Sky Weather API. This should provide a lightweight l
 
 ![Powered by Dark Sky](https://darksky.net/dev/img/attribution/poweredby-oneline.png)
 
+Find your latitude and longitude [here](https://www.latlong.net/).
+
+## Setup
+
+For simplicity, there is a `config.ini` file inside the `config` directory. Add your Dark Sky details there.
+
 ## Simple Usage
 ```python
 import darksky
+from ConfigParser import ConfigParser
 
-API_KEY = "API KEY"
-LAT = <LATITUDE>
-LON = <LONGITUDE>
+# Import details from config file to save typing
+config = ConfigParser()
+config.read('config/config.ini')
+api_key = config.get('darksky', 'key')
+latitude = config.get('darksky', 'latitude')
+longitude = config.get('darksky', 'longitude')
 
-f = darksky.Forecast(API_KEY, LAT, LON) # Generates forecast object
+f = darksky.Forecast(api_key, latitude, longitude) # Generates forecast object
 ```
 
 From here, you can access all the data provided in the response.
